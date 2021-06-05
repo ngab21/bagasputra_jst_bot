@@ -7,7 +7,7 @@ const cls_model = require('./sdk/cls_model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1877669223:AAFhUivKLRH-FVt7CeEuJEOfcV-sibI1xiY'
+const token = '1453271226:AAElPSXVwocc2cqEKZN6ymuyFZoyzmbzggU'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -16,7 +16,7 @@ bot.onText(/\/start/, (msg) => {
     console.log(msg)
     bot.sendMessage(
         msg.chat.id,
-        `hello ${msg.chat.first_name}, welcome...\n
+        `Assalamualaikum, ${msg.chat.first_name}, welcome to my JST bot \n
         click  /predict to know about i and v`
     );   
 });
